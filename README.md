@@ -225,30 +225,15 @@ Unfortunately, practical evaluation was not completed due to issues with the tra
 ### Prerequisites
 - MATLAB
 - CST Microwave Studio
+- EasyEDA
 
-### Setup Instructions
-1. Clone the repository: `git clone https://github.com/yourusername/Improving-Wireless-Communication-with-IRS.git`
-2. Follow the instructions in the `MATLAB/` and `CST/` directories for running simulations and designs.
+  
+Completing this section is useless now.
 
-## Usage
-### MATLAB Scripts
-<p align="justify">
-Navigate to the `MATLAB/` directory and follow the instructions to run the simulations.
-</p>
-### CST Designs
-<p align="justify">
-Open the CST project files in the `CST/` directory to explore the IRS designs.
-</p>
+## Simulation Files
 
-## Conclusion
-### Summary
-<p align="justify">
-Key findings include significant performance improvements in signal strength and coverage using IRS technology.
-</p>
-### Future Work
-<p align="justify">
-Further research could explore advanced optimization techniques and larger scale implementations.
-</p>
+I might publish a paper from this project later on, and I don't want it published by others yet. Therefore, the simulation files are not included in this public repository. If you are interested in these files, then send me an email at [rawashdeh758@gmail.com](mailto:rawashdeh758@gmail.com) provided that your reasons are good enough.
+
 
 ## References
 1. Yang, H. et al. A programmable metasurface with dynamic polarization, scattering and focusing control. Sci. Rep. 6, 35692 (2016).
