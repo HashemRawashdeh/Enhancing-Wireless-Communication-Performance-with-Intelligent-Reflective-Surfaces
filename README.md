@@ -235,8 +235,7 @@ Completing this section is useless now.
 <p align="justify">I might publish a paper from this project later on, and I don't want it published by others yet. Therefore, the simulation files are not included in this public repository. If you are interested in these files, send me an email at [rawashdeh758@gmail.com](mailto:rawashdeh758@gmail.com) provided that your reasons are convincing enough.  </p>
 
 ## Creators
-
-This project was entirely developed by Hashem Rawashdeh and Mohammad Asaslih. No other individuals contributed to the creation or development of this work.
+This project was entirely developed by Hashem Rawashdeh and Mohammad Asaslih. No other individuals contributed to the creation or development of the work presented here.
 
 ### Contact Information
 
@@ -250,7 +249,7 @@ This project was entirely developed by Hashem Rawashdeh and Mohammad Asaslih. No
 
 ## Acknowledgment
 <p align="justify"> 
-We extend our deepest gratitude to Dr. Ashraf Ali, the esteemed head of the Electrical Engineering Department at the Hashemite University. His generosity in granting us access to the department's laboratory resources has been instrumental. Dr. Ashraf's willingness to provide guidance and expert advice during our numerous technical and logistical inquiries has been invaluable.</p>
+We extend our deepest gratitude to Dr. Ashraf Ali, the esteemed head of the Electrical Engineering Department at the Hashemite University. His generosity in granting us access to his laboratory resources has been instrumental. Dr. Ashraf's willingness to provide guidance and expert advice during our numerous inquiries has been invaluable. We sincerely appreciate his ongoing support</p>
 
 ## References
 1. Yang, H. et al. A programmable metasurface with dynamic polarization, scattering and focusing control. Sci. Rep. 6, 35692 (2016).
