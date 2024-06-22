@@ -1,8 +1,7 @@
 # Improving Wireless Communication Performance with Intelligent Reflective Surfaces (IRS)
 
 ## Introduction
-<p align="justify">
-This repository contains the code, resources, and practical prototype details for a project focused on enhancing wireless communication performance using Intelligent Reflective Surfaces (IRS). The primary objective of this project is to demonstrate that electromagnetic radiation can be steered and its pattern altered passively through the use of IRS (passive beamforming). Additionally, the project presents practical use cases where the implementation of IRS significantly improved signal strength and coverage.
+<p align="justify">This repository contains the code, resources, and practical prototype details for a project focused on enhancing wireless communication performance using Intelligent Reflective Surfaces (IRS). The primary objective of this project is to demonstrate that electromagnetic radiation can be steered and its pattern altered passively through the use of IRS (passive beamforming). Additionally, the project presents practical use cases where the implementation of IRS significantly improved signal strength and coverage.
 </p>
 
 ## Project Overview
@@ -37,9 +36,10 @@ These figures illustrate how different configurations of IRS unit cells result i
 
 
 ### CST Simulation
-
+<p align="justify">
 In this section, we explore the design and simulation of the IRS using CST Microwave Studio. The primary objective of the unit cell design was to achieve a 180-degree phase shift at 2.44 GHz between the two states (diode on/off), and the objective of the whole IRS array is to achieve passive beamforming as described earlier.
-
+ </p>
+ 
 #### System Design
 
 ##### Unit Cell Design and Configuration
@@ -73,8 +73,8 @@ Unit cells are combined into a 4x9 array to scale the functionality over a large
 This array configuration forms the basis for practical IRS implementation in wireless communication systems.
 
 #### System Evaluation
-
-By changing the IRS configuration from 111111111 to 110000011, the signal pattern changes, demonstrating the IRS's ability to steer signals to previously unseen receivers. The following images illustrate this change.
+<p align="justify">
+By changing the IRS configuration from 111111111 to 110000011, the signal pattern changes, demonstrating the IRS's ability to steer signals to previously unseen receivers. The following images illustrate this change. </p>
 
 <p align="center">
   <img src="images/pattern_111111111.png" alt="IRS Pattern Configuration 111111111" width="350">
@@ -113,8 +113,8 @@ The IRS array consists of multiple reflecting elements in a 50x50 URA layout, 40
 
 
 ##### Simulation Setup
-
-The simulation models the Hashemite University campus, including typical obstacles such as buildings that obstruct the direct line of sight between the transmitter and receivers. The IRS is strategically placed to reflect signals towards the receivers, optimizing the communication path.
+<p align="justify"> 
+The simulation models the Hashemite University campus, including typical obstacles such as buildings that obstruct the direct line of sight between the transmitter and receivers. The IRS is strategically placed to reflect signals towards the receivers, optimizing the communication path. </p>
 <p align="center">
   <img src="images/modeled_university_campus.png" alt="Modeled University Campus" width="1000">
 </p>
@@ -144,8 +144,8 @@ In this scenario, the system's performance is evaluated for users obstructed by 
 </p>
 
 #### Evaluation
-
-The following table shows the numerical results for the scenario. The received power for each user is evaluated for every setup step, and the Rician factor is calculated based on the power delay profile (calculated and plotted in the code).
+<p align="justify">
+The following table shows the numerical results for the scenario. The received power for each user is evaluated for every setup step, and the Rician factor is calculated based on the power delay profile (calculated and plotted in the code). </p>
 
 | Setup | User 1 Received Power (dBm) | User 2 Received Power (dBm) | User 2 Rician Factor |
 |-------|-----------------------------|-----------------------------|----------------------|
@@ -155,7 +155,7 @@ The following table shows the numerical results for the scenario. The received p
 
 
 #### Use Case 2: Improving Communication for a Mobile User
-
+<p align="justify"> 
 In this scenario, the system's performance is evaluated for a mobile user moving between five different points.
 
 <p align="center">
@@ -165,7 +165,7 @@ In this scenario, the system's performance is evaluated for a mobile user moving
 1. **Without IRS:** The signal strength is measured at five points without using the IRS. This provides a baseline measurement of the signal coverage.
 2. **With IRS:** The IRS is enabled to assist in relaying the signal to the mobile user. This scenario demonstrates the IRS's effectiveness in improving signal strength and coverage.
 
-The received signal strength at each point is evaluated, and a graph is generated to visualize the differences. Additionally, coverage maps for each point are presented to show how the IRS can track a mobile user in an NLOS environment.
+The received signal strength at each point is evaluated, and a graph is generated to visualize the differences. Additionally, coverage maps for each point are presented to show how the IRS can track a mobile user in an NLOS environment.  </p>
 
 **Comparing the Received Power in dBm between IRS and Non-IRS System**
 <p align="center">
@@ -181,12 +181,12 @@ The received signal strength at each point is evaluated, and a graph is generate
 
 
 ### Physical Prototype
-
+<p align="justify">
 The transmitter for this project was ideally a USRP, but due to unavailability at the university at the time (now they have it), a transmitter unit operating at 2.4 + X GHz was used. Here, X is n*27 MHz, where \( n \) (0, 1, 2, 3) is controlled by the combinations of two switches. The output of the transmitter unit is connected to a Yagi antenna. 
 
 At the receiver, an identical Yagi antenna is used, connected to a spectrum analyzer to detect a peak at the center frequency, indicating a received signal with an appropriate power level.
 
-The IRS was designed using EasyEDA and manufactured by JLCPCB from China. The design and specifications are as follows:
+The IRS was designed using EasyEDA and manufactured by JLCPCB from China. The design and specifications are as follows: </p>
 
 #### IRS PCB Design
 <p align="center">
@@ -208,18 +208,19 @@ The IRS was designed using EasyEDA and manufactured by JLCPCB from China. The de
 | 1     | HDR-SMD_10P     | 1        | X6251WS-2x05H        | XKB          | LCSC     | C780052        | 0.176   |
 | 2     | SMP-1320-79LF   | 36       | SMP1320-79LF         | Skyworks     | LCSC     | C150854        | 0.285   |
 
+<p align="justify">
 The IRS array uses HDR-SMD_10P connectors and SMP-1320-79LF PIN diodes. These components ensure stable performance and dynamic phase shifting for effective signal manipulation.
 
 The physical IRS prototype integrates all components to validate theoretical and simulated performance in practice. The array consists of a 4x9 matrix of unit cells.
-
+ </p>
 <p align="center">
   <img src="images/physical_irs_architecture.png" alt="Physical IRS Architecture" width="1000">
 </p>
 To simulate an obstacle, another IRS array was used, with all unit cells turned on, making the IRS function as a perfect reflector at the center frequency.
 
 
-
-Unfortunately, practical evaluation was not completed due to issues with the transmitter unit and the lack of cheap, available alternatives in Jordan within the project's timeframe. Despite these challenges, significant progress was achieved within a month—a commendable effort considering the enrollment period started around April 7 and the prototype was ordered on May 10. The project, as it stands, is more than sufficient for a graduation project. However, out of respect for one's own efforts and hunger for knowldege. Also, lack of closure sucks, there is a substantial interest in completing it outside of the university, though not immediately, as the university holds the equipment and the prototype.
+<p align="justify">
+Unfortunately, practical evaluation was not completed due to issues with the transmitter unit and the lack of cheap, available alternatives in Jordan within the project's timeframe. Despite these challenges, significant progress was achieved within a month—a commendable effort considering the enrollment period started around April 7 and the prototype was ordered on May 10. The project, as it stands, is more than sufficient for a graduation project. However, out of respect for one's own efforts and hunger for knowldege. Also, lack of closure sucks, there is a substantial interest in completing it outside of the university, though not immediately, as the university holds the equipment and the prototype. </p>
 
 ## Installation and Setup
 ### Prerequisites
@@ -231,8 +232,7 @@ Unfortunately, practical evaluation was not completed due to issues with the tra
 Completing this section is useless now.
 
 ## Simulation Files
-
-I might publish a paper from this project later on, and I don't want it published by others yet. Therefore, the simulation files are not included in this public repository. If you are interested in these files, send me an email at [rawashdeh758@gmail.com](mailto:rawashdeh758@gmail.com) provided that your reasons are good enough.
+<p align="justify">I might publish a paper from this project later on, and I don't want it published by others yet. Therefore, the simulation files are not included in this public repository. If you are interested in these files, send me an email at [rawashdeh758@gmail.com](mailto:rawashdeh758@gmail.com) provided that your reasons are convincing enough.  </p>
 
 ## Creators
 
@@ -248,6 +248,9 @@ This project was entirely developed by Hashem Rawashdeh and Mohammad Asaslih. No
   Email: [abo.3sool1999@gmail.com](mailto:abo.3sool1999@gmail.com)  
   Phone: +962-78-250-9494
 
+## Acknowledgment
+<p align="justify"> 
+We extend our deepest gratitude to Dr. Ashraf Ali, the esteemed head of the Electrical Engineering Department at the Hashemite University. His generosity in granting us access to the department's laboratory resources has been instrumental. Dr. Ashraf's willingness to provide guidance and expert advice during our numerous technical and logistical inquiries has been invaluable.</p>
 
 ## References
 1. Yang, H. et al. A programmable metasurface with dynamic polarization, scattering and focusing control. Sci. Rep. 6, 35692 (2016).
