@@ -1,4 +1,4 @@
-# Improving Wireless Communication Performance with Intelligent Reflective Surfaces (IRS)
+# Enhancing Wireless Communication Performance with Intelligent Reflective Surfaces (IRS)
 
 ## Introduction
 <p align="justify">This repository contains the code, resources, and practical prototype details for a project focused on enhancing wireless communication performance using Intelligent Reflective Surfaces (IRS). The primary objective of this project is to demonstrate that electromagnetic radiation can be steered and its pattern altered passively through the use of IRS (passive beamforming). Additionally, the project presents practical use cases where the implementation of IRS significantly improved signal strength and coverage.
@@ -232,10 +232,10 @@ Unfortunately, practical evaluation was not completed due to issues with the tra
 Completing this section is useless now.
 
 ## Simulation Files
-<p align="justify">I might publish a paper from this project later on, and I don't want it published by others yet. Therefore, the simulation files are not included in this public repository. If you are interested in these files, send me an email at [rawashdeh758@gmail.com](mailto:rawashdeh758@gmail.com) provided that your reasons are convincing enough.  </p>
+<p align="justify">We might publish a paper from this project later on, and I don't want it published by others yet. Therefore, the simulation files are not included in this public repository. If you are interested in these files, send us an email if your reasons are convincing enough.  </p>
 
 ## Creators
-This project was entirely developed by Hashem Rawashdeh and Mohammad Asaslih. No other individuals contributed to the creation or development of the work presented here.
+This project was entirely done by Hashem Rawashdeh and Mohammad Asaslih. No other individuals contributed to the creation or development of the work presented here.
 
 ### Contact Information
 
